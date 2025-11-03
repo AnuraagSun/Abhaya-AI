@@ -1,41 +1,3 @@
-/*
- ═ ═*═════════════════════════════════════════════════════════════
- FILE: qml/components/SafetyWorkspace.qml
- ABHAYA-AI: PROFESSIONAL AUTOMOTIVE SAFETY INTERFACE
- ✅ SYSTEMATIC UI DESIGN SYSTEM
-
- DESIGN SYSTEM COLOR ASSIGNMENT:
- ───────────────────────────────────────────────────────────────
- TYPOGRAPHY:
- - Primary Titles     → Bright Cyan (#00FFFF)
- - Secondary Titles   → Electric Blue (#0080FF)
- - Body Text          → Light Gray (#CCCCCC)
- - Subtle Text        → Medium Gray (#888888)
- - Hint Text          → Dark Gray (#555555)
-
- BACKGROUNDS:
- - Cards              → Dark Blue (#161B24)
- - Panels             → Darker (#0D1117)
- - Sections           → Deep Teal tint
-
- BORDERS & DIVIDERS:
- - Primary Borders    → Bright Cyan (#00FFFF)
- - Card Borders       → Electric Blue (#0080FF)
- - Dividers           → Deep Teal (#003D4D)
-
- INTERACTIVE ELEMENTS:
- - Primary Buttons    → Mint Green (#00FFA3)
- - Secondary Actions  → Electric Blue (#0080FF)
- - Hover States       → Electric Blue @ 30%
- - Active States      → Mint Green
-
- DATA VISUALIZATION:
- - Positive/Good      → Mint Green (#00FFA3)
- - Neutral/Info       → Bright Cyan (#00FFFF)
- - Warning            → Electric Blue (#0080FF)
- - Critical/Alert     → Red (#FF4466)
- ═══════════════════════════════════════════════════════════════
- */
 
 import QtQuick
 import QtQuick.Controls
@@ -1975,44 +1937,4 @@ Rectangle {
     }
 }
 
-/*
- ═ ═*═════════════════════════════════════════════════════════════
- ✅ DESIGN SYSTEM SUMMARY:
- ═══════════════════════════════════════════════════════════════
 
- 📝 TYPOGRAPHY HIERARCHY:
- ───────────────────────────────────────────────────────────────
- ✓ Primary Titles    → Bright Cyan (#00FFFF) - Brand, main headers
- ✓ Secondary Titles  → Electric Blue (#0080FF) - Section headers
- ✓ Body Text         → Light Gray (#CCCCCC) - Main content
- ✓ Subtle Text       → Medium Gray (#888888) - Labels, metadata
- ✓ Hint Text         → Dark Gray (#555555) - Placeholders, units
-
- 🎨 BACKGROUNDS:
- ───────────────────────────────────────────────────────────────
- ✓ Cards             → Dark Blue (#161B24)
- ✓ Panels            → Darker (#0D1117)
- ✓ Sections          → Section BG (#1A1F2E)
-
- 🔲 BORDERS & DIVIDERS:
- ───────────────────────────────────────────────────────────────
- ✓ Primary Borders   → Bright Cyan (#00FFFF)
- ✓ Card Borders      → Electric Blue (#0080FF)
- ✓ Dividers          → Deep Teal (#003D4D)
-
- 🖱️ INTERACTIVE ELEMENTS:
- ───────────────────────────────────────────────────────────────
- ✓ Primary Actions   → Mint Green (#00FFA3)
- ✓ Secondary Actions → Electric Blue (#0080FF)
- ✓ Hover States      → Electric Blue @ 30%
- ✓ Active/On States  → Electric Blue
-
- 📊 DATA VISUALIZATION:
- ───────────────────────────────────────────────────────────────
- ✓ Positive/Success  → Mint Green (#00FFA3)
- ✓ Neutral/Info      → Bright Cyan (#00FFFF)
- ✓ Warning           → Electric Blue (#0080FF)
- ✓ Critical/Alert    → Red (#FF4466)
-
- ═══════════════════════════════════════════════════════════════
- */
