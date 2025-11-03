@@ -1,0 +1,128 @@
+
+
+# INDUSTRIAL DROWSINESS PREDICTION SYSTEM - CONFIGURATION
+
+# Camera Settings
+camera:
+  source: 0  # 0 for default webcam, or video file path
+  width: 1280
+  height: 720
+  fps: 30
+
+# Detection Thresholds (Calibrated for early detection)
+thresholds:
+  # Eye Aspect Ratio
+  ear_threshold: 0.25  # Below this = eyes closing
+  ear_consecutive_frames: 3  # Frames before trigger
+
+  # Perclos (Percentage of Eye Closure) - Industry standard
+  perclos_threshold: 0.15  # 15% eye closure over time window
+  perclos_window: 30  # frames (1 second at 30fps)
+
+  # Blink Analysis
+  max_blink_duration: 0.3  # seconds
+  min_blink_frequency: 10  # blinks per minute (lower = drowsy)
+  max_blink_frequency: 35  # blinks per minute (higher = fatigue)
+
+  # Yawn Detection
+  mar_threshold: 0.6  # Mouth Aspect Ratio for yawn
+  yawn_duration: 1.5  # seconds
+  yawns_per_minute_warning: 2
+
+  # Head Pose (nodding detection)
+  head_tilt_threshold: 15  # degrees
+  head_nod_speed_threshold: 20  # degrees per second
+
+  # Microsleep Detection
+  microsleep_duration: 0.5  # seconds of eye closure
+
+  # Gaze Analysis
+  gaze_deviation_threshold: 25  # degrees from center
+  gaze_fixation_duration: 3  # seconds staring at one point
+
+# Predictive Analysis
+prediction:
+  enabled: true
+  history_window: 300  # frames (10 seconds at 30fps)
+  trend_analysis_window: 900  # frames (30 seconds)
+
+  # Feature weights for prediction model
+  weights:
+    ear_trend: 0.25
+    blink_pattern: 0.20
+    yawn_frequency: 0.15
+    head_stability: 0.15
+    gaze_pattern: 0.10
+    reaction_time: 0.15
+
+  # Alert levels (0-100 drowsiness score)
+  alert_levels:
+    normal: 0
+    attention: 30
+    warning: 50
+    danger: 70
+    critical: 85
+
+# Alert System
+alerts:
+  # Visual Alerts
+  visual:
+    enabled: true
+    fullscreen_flash: true
+    color_warning: [0, 255, 255]  # Yellow (BGR)
+    color_danger: [0, 165, 255]   # Orange
+    color_critical: [0, 0, 255]    # Red
+
+  # Audio Alerts
+  audio:
+    enabled: true
+    warning_sound: "alerts/warning.wav"
+    danger_sound: "alerts/danger.wav"
+    critical_sound: "alerts/critical.wav"
+    volume: 0.8
+
+  # Voice Alerts
+  voice:
+    enabled: true
+    messages:
+      warning: "Attention: Early fatigue signs detected"
+      danger: "Warning: Drowsiness detected. Take a break"
+      critical: "CRITICAL: Pull over immediately"
+
+  # Escalation
+  escalation:
+    enabled: true
+    time_between_alerts: 5  # seconds
+    repeat_critical: true
+
+# Data Logging
+logging:
+  enabled: true
+  directory: "logs"
+  save_video: false  # Set true to save video with detections
+  save_metrics: true
+  save_events: true
+  session_summary: true
+
+# Performance
+performance:
+  gpu_acceleration: true
+  multi_threading: true
+  optimization_level: 2  # 0=accuracy, 1=balanced, 2=speed
+  max_cpu_percent: 60
+
+# Calibration
+calibration:
+  required_on_start: true
+  duration: 30  # seconds
+  save_profile: true
+  profile_directory: "profiles"
+
+# Display
+display:
+  show_video: true
+  show_landmarks: true
+  show_metrics: true
+  show_graphs: true
+  fullscreen: false
+  overlay_opacity: 0.7
