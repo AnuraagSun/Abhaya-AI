@@ -2,10 +2,11 @@
 ## Comprehensive Technical Documentation
 
 <div align="center">
-![Version](https://img.shields.io/badge/version-1.0-blue.svg)
+  ![Version](https://img.shields.io/badge/version-1.0-blue.svg)
 ![Status](https://img.shields.io/badge/status-production--ready-green.svg)
 ![License](https://img.shields.io/badge/license-MIT-orange.svg)
 ![Platform](https://img.shields.io/badge/platform-Raspberry%20Pi%204-red.svg)
+
 
 **Preventing Fatigue-Related Crashes Through Predictive AI**
 
