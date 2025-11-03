@@ -42,6 +42,8 @@
 
 **Abhaya-AI** is a next-generation driver wellness monitoring system that predicts and prevents fatigue-related crashes through multi-modal sensing, predictive AI, and intelligent intervention strategies. Unlike conventional systems that merely react to drowsiness, Abhaya-AI forecasts cognitive impairment **15 minutes in advance**, enabling proactive safety measures.
 
+https://github.com/AnuraagSun/Abhaya-AI/blob/13f8b2471328bf3f3c9175b597577c4194f3df1b/Screenshot_20251103_232430.png
+
 ### 🌟 Key Innovations
 
 ```mermaid
